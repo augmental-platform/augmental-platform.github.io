@@ -22,13 +22,15 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     npm install -g gatsby-cli
     ```
 
-2.  **Create a Gatsby site.**
-
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+2.  **Setup the site**
 
     ```sh
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter
+    git clone git@github.com:augmental-platform/augmental-platform.github.io.git
+    cd augmental-platform.github.io
+    # checkout the develop branch which has the source code
+    git checkout develop
+    # install all dependencies
+    yarn install
     ```
 
 3.  **Start developing.**
@@ -36,7 +38,6 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     Navigate into your new site’s directory and start it up.
 
     ```sh
-    cd my-default-starter/
     gatsby develop
     ```
 
@@ -48,6 +49,13 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     
     Open the the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
     
+5. **💫 Deploy**
+
+    ```sh
+    yarn deploy
+    ```
+
+
 ## 🧐 What's inside?
 
 A quick look at the top-level files and directories you'll see in a Gatsby project.
@@ -101,6 +109,3 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 -   **To dive straight into code samples head [to our documentation](https://next.gatsbyjs.org/docs/).** In particular, check out the “Guides”, API reference, and “Advanced Tutorials” sections in the sidebar.
 
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
